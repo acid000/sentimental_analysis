@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <div style="border: 1px solid red; text-align: center;">
+    <h1>Brand Sentiment Analysis</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="enter brand">
+        <br>
+        <br>
+        <textarea name="text" placeholder="Enter your review"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+        <h2>sentiment  -> {{ sentiment }} </h2>
+        <br>
+        <a href="/home"> check ratings </a>
+
+        
+    </div>
+</body>
+</html>
