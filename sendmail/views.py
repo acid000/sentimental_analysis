@@ -20,5 +20,5 @@ def sendmail():
             maillist.append(mail.email)
         if d[name]!=avsP:
             d[name]=avsP
-            send_mail('hello sir/mam the polarity of the brand is changed ','this is from sachin','sr719499@gmail.com',mail,fail_silently=False)
+            send_mail('hello sir/mam the polarity of the brand is changed ','this is from sachin','sr719499@gmail.com',maillist,fail_silently=False)
     print("i am called")
